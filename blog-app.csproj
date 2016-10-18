@@ -161,6 +161,7 @@
   </Target>
   -->
   <ItemGroup>
+    <TypeScriptCompile Include="ref.ts" />
     <TypeScriptCompile Include="src\app\modules\blog\article-page.component.ts" />
     <TypeScriptCompile Include="src\app\modules\blog\article.model.ts" />
     <TypeScriptCompile Include="src\app\modules\blog\article.service.ts" />
@@ -185,6 +186,10 @@
     <TypeScriptCompile Include="src\app\routing\index.ts" />
     <TypeScriptCompile Include="src\app\modules\index.ts" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="src\app\modules\about\" />
+    <Folder Include="src\app\modules\contact\" />
+    <Folder Include="src\app\modules\search\" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
 </Project>
