@@ -10,7 +10,7 @@ import "./rxjs-extensions";
 import { AppComponent } from './app.component';
 
 import { ComponentsModule } from "./components";
-import { ServicesModule } from "./services";
+
 
 import {
     RoutingModule,
@@ -30,7 +30,6 @@ const providers = [
     imports: [
         ComponentsModule,
         RoutingModule,
-        ServicesModule,
 
         BrowserModule,
         HttpModule,

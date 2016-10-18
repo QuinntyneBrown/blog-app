@@ -73,6 +73,22 @@
   <ItemGroup>
     <Content Include="index.html" />
     <Content Include="packages.config" />
+    <Content Include="src\app\modules\blog\article-page.component.html">
+      <DependentUpon>article-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\modules\blog\article-page.component.scss">
+      <DependentUpon>article-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\modules\blog\articles-page.component.html">
+      <DependentUpon>articles-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\app\modules\landing\landing-page.component.html">
+      <DependentUpon>landing-page.component.ts</DependentUpon>
+    </Content>
+    <Content Include="src\styles\index.scss" />
+    <Content Include="src\styles\_breakpoints.scss" />
+    <Content Include="src\styles\_normalize.scss" />
+    <Content Include="src\styles\_varibles.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -88,10 +104,10 @@
     <Content Include="src\app\app.component.scss">
       <DependentUpon>app.component.ts</DependentUpon>
     </Content>
-    <Content Include="src\app\landing-page.component.html">
-      <DependentUpon>landing-page.component.ts</DependentUpon>
+    <Content Include="src\app\modules\blog\articles-page.component.scss">
+      <DependentUpon>articles-page.component.ts</DependentUpon>
     </Content>
-    <Content Include="src\app\landing-page.component.scss">
+    <Content Include="src\app\modules\landing\landing-page.component.scss">
       <DependentUpon>landing-page.component.ts</DependentUpon>
     </Content>
     <Content Include="webpack.config.js" />
@@ -145,8 +161,14 @@
   </Target>
   -->
   <ItemGroup>
+    <TypeScriptCompile Include="src\app\modules\blog\article-page.component.ts" />
+    <TypeScriptCompile Include="src\app\modules\blog\article.model.ts" />
+    <TypeScriptCompile Include="src\app\modules\blog\article.service.ts" />
+    <TypeScriptCompile Include="src\app\modules\blog\articles-page.component.ts" />
     <TypeScriptCompile Include="src\app\modules\blog\blog.module.ts" />
     <TypeScriptCompile Include="src\app\modules\blog\index.ts" />
+    <TypeScriptCompile Include="src\app\modules\landing\index.ts" />
+    <TypeScriptCompile Include="src\app\modules\landing\landing-page.component.ts" />
     <TypeScriptCompile Include="src\vendor.ts" />
     <TypeScriptCompile Include="src\polyfills.ts" />
     <TypeScriptCompile Include="src\main.ts" />
@@ -161,7 +183,6 @@
     <TypeScriptCompile Include="src\app\configuration\index.ts" />
     <TypeScriptCompile Include="src\app\routing\routing.module.ts" />
     <TypeScriptCompile Include="src\app\routing\index.ts" />
-    <TypeScriptCompile Include="src\app\landing-page.component.ts" />
     <TypeScriptCompile Include="src\app\modules\index.ts" />
   </ItemGroup>
   <ItemGroup />

@@ -2,7 +2,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import {
 	LandingPageComponent
-} from "../landing-page.component";
+} from "../modules";
 
 export const routes: Routes = [
     {
